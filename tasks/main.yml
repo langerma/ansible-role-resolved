@@ -7,7 +7,7 @@
     group: root
     mode: 0644
 
-- name: generate systemd-resolved.conf
+- name: generate resolved.conf
   template:
     src: resolved.conf.j2
     dest: /etc/systemd/resolved.conf
@@ -16,13 +16,13 @@
     mode: 0644
   notify: restart resolved
 
-- name: start systemd-resolved
+- name: start resolved
   service:
     name: systemd-resolved
     state: started
     enabled: yes
 
-- name: use systemd-resolved
+- name: use resolved
   file:
     src: /run/systemd/resolve/stub-resolv.conf
     dest: /etc/resolv.conf

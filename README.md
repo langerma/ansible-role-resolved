@@ -1,3 +1,3 @@
-# ansible-role-systemd-resolved
+# ansible-role-resolved
 
 Ansible role for configuring systemd-resolved

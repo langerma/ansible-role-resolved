@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: remerge
+  namespace: remerge
+  role_name: resolved
+  description: Ansible role for configuring systemd-resolved.
+  license: Apache-2.0
+  company: remerge GmbH
+  min_ansible_version: "2.10"
+
+  galaxy_tags:
+    - systemd
+
+dependencies: []
